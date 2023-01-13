@@ -1,0 +1,244 @@
+:root{
+
+  /*Primary*/
+  
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+   
+
+  /*Fonts*/
+    
+  --OpenSans: 'Open Sans', sans-serif;
+  --Poppins: 'Poppins', sans-serif;
+
+}
+  
+  
+/*
+  0. CSS Reset ------------------------ 
+  1. Base Styles -------------------
+  2. Layout Styles -----------------
+  3. Module Styles -----------------
+  4. State Styles -----------------
+  5. Responsive Styles-----------------
+*/
+
+
+/*-----------------------------------------
+0. CSS Reset
+------------------------------------------*/
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+/*-----------------------------------------
+1. Base Styles
+------------------------------------------*/
+
+body{
+  height: 100vh;
+  background-color: var(--Violet);
+  background-image: url('images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/*-----------------------------------------
+2. Layout Styles
+------------------------------------------*/
+
+.container{
+  height: inherit;
+  width: 90%;
+  margin: 0 auto;
+  position:relative;
+
+  
+}
+.header{
+  padding-top: 5em;
+}
+
+.hero{
+  display: flex;
+}
+
+.footer{
+  width: 100%;
+  padding: 2em 0 4em 0;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+
+
+/*-----------------------------------------
+3. Module Styles
+------------------------------------------*/
+
+.header__logo{
+  width: 21em;
+}
+
+.hero{
+  margin-top: 10em;
+}
+
+.hero__imgContainer{
+  flex:8;
+  
+}
+
+.hero__img{
+  width: 95%;
+}
+
+.hero__info{
+  margin: 2.5em 0 0 1.2em;
+  flex:6;
+  font-family: var(--Poppins);
+  font-size: 1.75rem;
+  
+}
+
+.hero__title{
+  font-size: 4rem;
+  color:white;
+}
+
+.hero__title--break{
+  display: block;
+}
+
+.hero__descr{
+  margin: 1em 0 1.4em 0;
+  color: white;
+  line-height: 2.8rem;
+}
+
+.hero__btn{
+  width: 11.5em;
+  padding: .8em 0;
+  margin-left: .2em;
+  display: block;
+  background-color: white;
+  color: var(--Violet);
+  text-align: center;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 32px 2px rgba(37, 37, 37, 0.75);
+  -moz-box-shadow: 0px 0px 32px 2px rgba(37, 37, 37, 0.75);
+  box-shadow: 0px 0px 32px 2px rgba(37, 37, 37, 0.75);
+}
+
+
+.footer__icons{
+  width: 17em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.footer__socialBtn{
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.footer__socialBtn i{
+  color: white;
+  font-size: 1.75rem;
+}
+
+
+
+/*-----------------------------------------
+4. State Styles
+------------------------------------------*/
+.footer__socialBtn:hover{
+  border-color: var(--SoftMagenta);
+  transition: .2s ease-in-out;
+}
+.footer__socialBtn:hover > i{
+  color: var(--SoftMagenta);
+  transition: .2s ease-in-out;
+} 
+
+.hero__btn:hover{
+  color: white;
+  background-color: var(--SoftMagenta);
+  transition: .2s ease-in-out;
+}
+
+
+/*-----------------------------------------
+5. Responsive Styles
+------------------------------------------*/
+
+@media screen and (max-width: 1200px){
+
+  html{
+    font-size: 57%;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .hero{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__imgContainer{
+    width: 60%;
+  }
+  .hero__info{
+    flex:1;
+    text-align: center;
+  }
+  .hero__btn{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .hero__imgContainer{
+    width: 80%;
+  }
+  .hero__title{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 450px){
+  
+  .header{
+    padding-top: 2em;
+  }
+  .hero{
+    margin-top: 3em;
+  }
+  
+}
+
+@media screen and (max-width: 400px){
+  html{
+    font-size: 50%;
+  }
+}
