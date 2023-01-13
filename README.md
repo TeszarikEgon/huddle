@@ -26,16 +26,16 @@ Users should be able to:
 
 Desktop view:
 
-![screenshot-desktop](https://user-images.githubusercontent.com/55054137/211656059-8deb15aa-8b5b-4020-b82e-57025674df4b.png)
+![screenshot-desktop](https://user-images.githubusercontent.com/55054137/212416488-0867c896-8b20-4a06-ae27-6fab676c7996.png)
 
 Mobile view:
 
-![screenshot-mobile](https://user-images.githubusercontent.com/55054137/211656184-61de7ed3-9078-4984-a088-9f0e2254b2b1.png)
+![screenshot-mobile](https://user-images.githubusercontent.com/55054137/212416668-fb6eace5-bc5c-4ab8-a3e0-08d787a79ea4.png)
 
 
 ### Links
 
-- Live Site URL: [Click here](https://mentorstatscard.netlify.app/)
+- Live Site URL: [Click here](https://huddle99.netlify.app/)
 
 ## My process
 
